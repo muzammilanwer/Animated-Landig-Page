@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    height: 100vh;
+    width: 100%;
+}
+#back{
+    height: 100vh;
+    width: 100%;
+    
+}
+#back img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+#top{
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+}
+#workingArea{
+    width: 80%;
+    max-width: 1920px;
+    height: 100vh;
+    margin: 0 auto;
+    position: relative;
+}
+#nav{
+    width: 100%;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav img{
+    height: 40px;
+}
+#navleft, #navright{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+#navleft a, #navright a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    pointer-events: all;
+}
+#hero{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    top: 55%;
+    left: 0;
+    transform: translate(0%, -50%);
+    
+    
+}
+
+#heroleft{
+    min-width:50%;
+    
+    
+}
+#heroright{
+    width: 19%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#heroright p{
+    font-size: 12px;
+    text-align: right;
+    font-weight: 300;
+}
+#heroleft .elem h1{
+    font-family: "Kajiro";
+    color: white;
+    font-weight: 100;
+    font-size: 11vw;
+    line-height: .9;
+}
+#heroleft .elem{
+    height: 9vw;
+    overflow: hidden;
+    
+}
+#heroleft button{
+    padding: .8vw 2vw;
+    font-family: "kajiro";
+    font-size: 3vw;
+    margin-top: 2vw;
+    pointer-events: all;
+    cursor: pointer;
+    
+}
+#heroright #divimage{
+    width: 100%;
+    height: 130px;
+    background-image:url(https://media.ray-ban.com/cms/resource/image/1159640/landscape_ratio38x35/304/280/d7efb97e658ee7117708c6cc91c115b1/D2EFE3A877CB5AF805F813CC687D34A5/rbm-ddm-ss24-2.jpg);
+    background-size: cover;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    background-position: top;
+}
+
+
+#heroright p:nth-of-type(2) {
+    margin-bottom: 65px;
+}
+
+
+#back {
+    position: absolute; /* Ensure it's positioned */
+    z-index: 1; /* Set a lower z-index */
+}
+
+#top {
+    position: relative; /* Ensure it's positioned */
+    z-index: 2; /* Higher z-index to ensure it's on top */
+}
+
+#workingArea {
+    position: relative; /* Ensure it's positioned */
+    z-index: 3; /* Higher z-index to ensure it's on top */
+}
